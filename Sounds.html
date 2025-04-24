@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sound Buttons</title>
+  <style>
+    .button {
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .button2 { background-color: #008CBA; }
+    .button3 { background-color: #f44336; }
+  </style>
+</head>
+<body>
+
+<h2>Play a Sound</h2>
+
+<button class="button" onclick="document.getElementById('audio1').play()">Play Jump Sound</button>
+<button class="button button2" onclick="document.getElementById('audio2').play()">Play Success Sound</button>
+<button class="button button3" onclick="document.getElementById('audio3').play()">Play Loss Sound</button>
+
+<!-- Audio elements -->
+<audio id="audio1" src="https://raw.githubusercontent.com/CiaranMullen/Sounds/main/Sound1.wav"></audio>
+<audio id="audio2" src="https://raw.githubusercontent.com/CiaranMullen/Sounds/main/Sound2.wav"></audio>
+<audio id="audio3" src="https://raw.githubusercontent.com/CiaranMullen/Sounds/main/Sound3.wav"></audio>
+
+</body>
+</html>
